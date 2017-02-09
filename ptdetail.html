@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>拼在衡阳</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/swiper-3.4.0.min.css">
+    <link rel="stylesheet" href="css/ptdetail.css">
+</head>
+
+<div class="toshow" style="display: none">
+    <div class="toshow2" style="color: white">
+        <div style="margin: 3rem;">
+            <p>还差<span style="font-size: 0.7rem" class="orange wait_join_num"></span>人拼团成功</p>
+            <p>人满才能成团</p>
+        </div>
+    </div>
+    <img class="arrow2" src="img/arrow2.png" alt="">
+</div>
+
+<div class="toshow3">
+    <div class="toshow2">
+
+    </div>
+    <img class="guanzhuimg" src="img/guanzhu.jpg" alt="">
+
+</div>
+
+
+
+
+<body onload="rootREM()">
+
+<div id="swiper">
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<div class="panel">
+    <input type="hidden" value="" id="desc">
+    <p class="flex panelflex2">
+        <span class="orange" style="margin-left: 0">￥<span class="group_price">12.99</span></span>
+        <span style="text-decoration:line-through;" class="describefont grey">原价：￥<span class="price">123</span></span>
+    </p>
+    <p class="ptname">二人套餐，芒果蛋糕+榴莲千层</p>
+</div>
+
+
+<div class="panel mgtop" style="">
+    <div class="ptdiv">
+        <img style="border-radius: 25px;" class="middleimg" id="orderOwnerimg" src="" alt="">
+    </div>
+    <div class="ptdiv">
+        <p style="font-size: 0.4rem" class="orderOwner"></p>
+    </div>
+    <div class="ptdiv">
+        <p class="describefont">
+            还差<span class="titlefont orange wait_join_num"></span>人拼团成功
+        </p>
+    </div>
+    <div class="ptdiv flex center ptmes">
+        <!--<img class="smallimg" style="border-radius: 25px;" class="middleimg" src="img/nounuser.png" alt="">-->
+        <!--<img class="smallimg" style="border-radius: 25px;" class="middleimg" src="img/nounuser.png" alt="">-->
+        <!--<img class="smallimg" style="border-radius: 25px;" class="middleimg" src="img/nounuser.png" alt="">-->
+        <!--<img class="smallimg" style="border-radius: 25px;" class="middleimg" src="img/nounuser.png" alt="">-->
+        <!--<img class="smallimg" style="border-radius: 25px;" class="middleimg" src="img/nounuser.png" alt="">-->
+        <!--<img class="smallimg" style="border-radius: 25px;" class="middleimg" src="img/nounuser.png" alt="">-->
+        <!--<img class="smallimg" style="border-radius: 25px;" class="middleimg" src="img/nounuser.png" alt="">-->
+        <!--<img class="smallimg" style="border-radius: 25px;" class="middleimg" src="img/nounuser.png" alt="">-->
+        <!--<img class="smallimg" style="border-radius: 25px;" class="middleimg" src="img/nounuser.png" alt="">-->
+    </div>
+    <div class="flex grey" style="text-align: center;justify-content: center;">
+        <hr style="width: 2.5rem">
+        <span class="describefont">剩余 <span class="orange endtime">24:00:00</span>结束</span>
+        <hr style="width: 2.5rem">
+    </div>
+</div>
+
+<div class="panel mgtop">
+    <p class="titlefont2 mg0">使用规则</p>
+    <p id="goodsdesc" style="font-size:0.4rem;margin-top: 0.1rem" class="mgtop01 flex panelflex2 secgrey ">
+
+    </p>
+</div>
+
+<div class="panel mgtop" id="mall">
+
+    <p class="titlefont"></p>
+    <hr class="hrline mg0">
+    <div  class="flex" style="justify-content: space-between;margin-top: 0">
+        <div>
+            <p class="grey describefont"></p>
+            <p class="grey describefont"></p>
+        </div>
+        <div>
+            <img class="busiadressicon"  src="img/address2.png" alt="">
+            <img class="busiadressicon"  src="img/tel.png" alt="">
+        </div>
+    </div>
+</div>
+<div style="font-size:0.4rem;height: 0.7rem;padding-top: 0.3rem;" class=" touchchange panel orange searchother">点击查看其余<span class="fendiannum"></span>家分店地址
+    <span style="float: right"> > </span>
+</div>
+
+<div class="fendianlist" style="display: none">
+</div>
+
+<div class="busishow">
+    <img style="width: 100%" src="img/banner_01.jpg" alt="">
+    <img style="width: 100%" src="img/banner_01.jpg" alt="">
+    <img style="width: 100%" src="img/banner_01.jpg" alt="">
+    <img style="width: 100%" src="img/banner_01.jpg" alt="">
+    <img style="width: 100%" src="img/banner_01.jpg" alt="">
+</div>
+
+<div class="buypanel flex between mainnav">
+    <a href="index.html">
+        <div style="width: 3rem;justify-content: center" class="mainnav_item" >
+            <img class="" src="img/1-1.png" alt="">
+            <p class="">主页</p>
+        </div>
+    </a>
+    <div style="background: orange;color: white;font-size: 0.4rem;width: 3.5rem;height: 1.5rem;" class="showmore">
+        <div id="changestatus" style="">
+            <img style="width: 1rem;" class="" src="img/wait_group.png" alt="">
+            <p style="margin-top: -0.1rem">还差<span class="wait_to_join">9</span>人拼团成功</p>
+        </div>
+        <input type="hidden" id="this_group">
+        <input type="hidden" id="is_subscribed">
+    </div>
+    <a style="height:1.5rem;" href="user.html">
+        <img style="width: 0.8rem" class="" src="img/usercenter.png" alt="">
+        <div style="font-size: 0.4rem;width: 3.5rem;height: 1.5rem;" class="">
+            <p id="changestatus">个人中心</p>
+        </div>
+    </a>
+</div>
+
+
+
+
+
+</body>
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/lib/swiper-3.4.0.jquery.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="js/common.js"></script>
+<script src="js/ptdetail.js?v=1.2"></script>
+
+<script>
+
+</script>
+
+
+</html>

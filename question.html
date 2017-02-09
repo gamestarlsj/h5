@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><avalon ms-skip="" class="avalonHide">
+    <style id="avalonStyle">.avalonHide{ display: none!important }</style></avalon>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/question.css">
+    <title>常见问题</title></head>
+<body>
+    <style>
+        .pin-spinner-2 {
+            display: none;
+            position: fixed;
+            width: 66px;
+            height: 66px;
+            left: 50%;
+            top: 35%;
+            margin-left: -33px;
+            z-index: 999999999;
+        }
+        .ps-inner-box {
+            width: 100%;
+            height: 100%;
+            display: -webkit-flex;
+            justify-content: center;
+            -webkit-justify-content: center;
+            align-items: center;
+            -webkit-align-items: center;
+        }
+        .ps-rotate-img {
+            width:  25px;
+            height: 25px;
+            animation: rotateImg 2.5s linear infinite;
+            -webkit-animation: rotateImg 2.5s linear infinite;
+            z-index: 9999999999;
+        }
+        #ps-background {
+            display: none;
+            position: fixed;
+            width: 66px;
+            height: 66px;
+            left: 50%;
+            top: 35%;
+            margin-left: -33px;
+            opacity: 0.7;
+            background-color: #000;
+            border-radius: 9px;
+        }
+        @keyframes rotateImg {
+            0% {
+                transform: rotateZ(0deg);
+            }
+            50% {
+                transform: rotateZ(180deg);
+            }
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+        @-webkit-keyframes rotateImg {
+            0% {
+                -webkit-transform: rotateZ(0deg);
+            }
+            50% {
+                -webkit-transform: rotateZ(180deg);
+            }
+            100% {
+                -webkit-transform: rotateZ(360deg);
+            }
+        }
+    </style>
+    <div id="pin-spinner" class="pin-spinner-2" style="display: none;">
+        <div id="ps-background" style="display: none;"></div>
+        <div class="ps-inner-box">
+            <img id="imgInit" class="ps-rotate-img" src="data:image/png;base64,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">
+        </div>
+    </div>
+</div><div class="pin-toast-container">
+    <div class="pin-toast"></div>
+</div>
+<div class="suggestion-wrap" avalonctrl="root">
+    <div class="suggestion-header">常见问题</div>
+    <div style="height: 45px; visibility: hidden;"></div>
+    <div class="suggestion-body">
+        <div class="suggestion-list">
+            <div class="suggestion-one">
+            <div qid="0" class="suggestion-title">我拍下后的产品什么时候发货？</div>
+            <div class="suggestion-arrow">
+                <img src="img/arrow.png">
+            </div>
+        </div>
+        <div class="suggestion-one">
+            <div qid="1" class="suggestion-title">已拼团成功到店却不能消费是否可以退拼团费？</div>
+            <div class="suggestion-arrow">
+                <img src="img/arrow.png">
+            </div>
+        </div>
+        <div class="suggestion-one">
+            <div qid="2" class="suggestion-title">没有收到货/商家发错地址了怎么办？</div>
+            <div class="suggestion-arrow">
+                <img src="img/arrow.png">
+            </div>
+        </div>
+        <div class="suggestion-one">
+            <div qid="3" class="suggestion-title">收到产品有问题怎么办？</div>
+            <div class="suggestion-arrow">
+                <img src="img/arrow.png">
+            </div>
+        </div>
+        <div class="suggestion-one">
+            <div qid="4" class="suggestion-title">如何联系商家客服？</div>
+            <div class="suggestion-arrow">
+                <img src="img/arrow.png">
+            </div>
+        </div>
+        <div class="suggestion-one">
+            <div qid="5" class="suggestion-title">为什么要购买拼团券？</div>
+            <div class="suggestion-arrow">
+                <img src="img/arrow.png">
+            </div>
+        </div>
+        <div class="suggestion-one">
+            <div qid="6" class="suggestion-title">为什么我的拼团券不能使用？</div>
+            <div class="suggestion-arrow">
+                <img src="img/arrow.png">
+            </div>
+        </div>
+        <div class="suggestion-one">
+            <div qid="7" class="suggestion-title">收到的产品能退换货么？</div>
+            <div class="suggestion-arrow">
+                <img src="img/arrow.png">
+            </div>
+        </div>
+        <div class="suggestion-one">
+            <div qid="8" class="suggestion-title">退换货流程</div>
+            <div class="suggestion-arrow">
+                <img src="img/arrow.png">
+            </div>
+        </div>
+        <div class="suggestion-one">
+            <div qid="9" class="suggestion-title">7天无理由退换货</div>
+            <div class="suggestion-arrow">
+                <img src="img/arrow.png">
+            </div>
+        </div>
+        <!--<div class="suggestion-one">-->
+            <!--<div qid="10" class="suggestion-title">如何联系拼在衡阳客服？</div>-->
+            <!--<div class="suggestion-arrow">-->
+                <!--<img src="img/arrow.png">-->
+            <!--</div>-->
+        <!--</div>-->
+        </div>
+    </div>
+    <div style="height: 50px; visibility: hidden;"></div>
+</div>
+
+    <script src="js/lib/zepto.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/question.js"></script>
+</body>
+</html>

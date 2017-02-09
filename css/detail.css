@@ -1,0 +1,96 @@
+#swiper{
+    height:36%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+}
+
+.panelflex2{
+    justify-content: flex-start;
+    margin-top: 0.4rem;
+    font-size: 0.35rem;
+    /* width: 9rem; */
+}
+
+
+.cantuanpic{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 0.1rem;
+}
+
+.cantuanfont1{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.cantuanbutton{
+    font-size: 0.4rem;
+    border: 1px solid orange;
+    /* padding: 0.2rem; */
+    color: orange;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.busiadressicon{
+    width: 0.5rem;display: block;
+    margin: 0.2rem;
+    margin-right: 0.6rem;
+}
+
+.busishow {
+    margin-top: 0.3rem;
+}
+
+.buypanel {
+    height: 1.5rem;
+    border: 1px solid orange;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+.buyitem{
+    border: 1px solid orange;
+    height: 1.5rem;
+    flex-direction: row-reverse;
+    border-right: 0;
+}
+
+.buyitem p {
+    margin-top: 0.15rem;
+}
+
+.pricevs{
+    height: 1.5rem;
+    border-left: 1px solid orange;
+    line-height: 0.7rem;
+}

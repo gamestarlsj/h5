@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>支付密码找回</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pwRetrieve.css">
+</head>
+<body onload="rootREM()">
+
+<style>
+    #getMessage{
+        width: 9.2rem;
+        height: 1.17rem;
+        margin-top: 0.3rem;
+        margin-left: 0.4rem;
+        font-size: 0.45rem;
+    }
+</style>
+
+<div class="header between">
+    <p id="return">
+        <img src="img/nav_icon_back.png" alt="">
+    </p>
+    <p>支付密码找回</p>
+    <p></p>
+</div>
+
+<div class="panel flex between" style="height: 0.93rem">
+    <input type="text" placeholder="请输入手机号" id="account" class="font042 mgleft02 mgtop015" style="border: 0;width: 7rem">
+    <img src="img/arrow.png" class="arrow mgright02" alt="">
+</div>
+
+<a href="changeVerification.html">
+    <button id="getMessage" class="orangeButton_big">获取短信验证码</button>
+</a>
+
+
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/setaddress.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>支付密码找回</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pwRetrieve.css">
+</head>
+<body onload="rootREM()">
+
+<div class="header between">
+    <p id="return">
+        <img src="img/nav_icon_back.png" alt="">
+    </p>
+    <p>支付密码找回</p>
+    <p></p>
+</div>
+
+<div class="mgtop grey font037" style="margin-left: 0.4rem">
+    请输入身份证信息以验证您的身份
+</div>
+
+<ul class="userlist mgtop015">
+    <li class="userli flex touchchange" style="">
+        <div class="flex">
+            <p class="orderP">
+                <input class="RetrieveInput" type="text" placeholder="请输入姓名">
+            </p>
+        </div>
+        <img class="arrow" src="img/arrow.png" alt="">
+    </li>
+    <li class="userli flex touchchange" style="border-bottom: 0">
+        <div class="flex">
+            <p class="orderP">
+                <input class="RetrieveInput" type="text" placeholder="请输入身份证号码">
+            </p>
+        </div>
+        <img class="arrow" src="img/arrow.png" alt="">
+    </li>
+</ul>
+
+<div class="mgtop grey font037" style="margin-left: 0.4rem">
+    即将发送验证码至186****0000
+</div>
+
+<ul class="panel mgtop015 flex between" style="height: 1.33rem;">
+    <input class="RetrieveInput mgleft02" type="text" placeholder="请输入6位验证码">
+    <p>
+        <span style="margin-right: 0.2rem;padding-left:0.4rem;border-left: 1px solid #FF922B" class="font042 orange messageSend">确认发送</span>
+        <input type="hidden" id="timecount" value="60">
+    </p>
+</ul>
+
+<button id="return_pw" class="orangeButton_big">支付密码找回</button>
+
+
+
+
+
+
+</body>
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/pwRetrieve.js"></script>
+</html>

@@ -1,0 +1,8 @@
+.uparrow{
+    /* position: absolute; */
+    /* left: 0.65rem; */
+    z-index: -1;
+    position: relative;
+    margin-left: 0.3rem;
+    top: rem;
+}

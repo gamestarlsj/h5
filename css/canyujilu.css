@@ -1,0 +1,30 @@
+.thoughline {
+    height: 2px;
+    width: 1.6rem;
+    background: #FF922B;
+    display: block;
+    position: relative;
+    margin-left: 0.7rem;
+    top: -0.05rem;
+}
+
+.navbar{
+    width: 10rem;
+    height: 1.17rem;
+    margin: 0;
+    padding: 0;
+}
+
+.productPanel{
+    margin-top: 0.15rem;
+}
+
+#percent_line{
+    width: 7.09rem;
+    height: 0.29rem;
+}
+
+.orangeButton{
+    width: 1.57rem;
+    height: 0.69rem;
+}

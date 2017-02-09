@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>押金返还</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/depositReturn.css">
+</head>
+
+<body onload="rootREM()">
+
+<div class="header between">
+    <p id="return">
+        <img src="img/nav_icon_back.png" alt="">
+    </p>
+    <p>押金返还</p>
+    <p></p>
+</div>
+
+<div class="panel mgleft02 mgtop font042 grey" style="background: #EDEDED;box-shadow: none">
+    <span>退租:如您选择提前退租，租赁期与梦想币发放截至本月底，租赁押金退还至您名下银行卡。</span>
+</div>
+
+<div class="panel">
+    <div class="flex">
+        <img style="width: 0.58rem;height: 0.58rem" class="mgleft02" src="img/jianhanglogo.png" alt="">
+        <span class="font042 mgleft02">建设银行（9999）</span>
+    </div>
+    <hr class="hrline">
+    <div class="flex" style="height: 2.8rem">
+        <span style="font-size:0.9rem">￥</span>
+        <input type="text" placeholder="可返还1000000.00元" class="returnInput"/>
+        <span style="margin-left: 1.8rem" class="font037 blue">全部返还</span>
+    </div>
+    <hr class="hrline">
+    <div class="flex between">
+        <span class="mgleft02 font037">有100.00元不可返还</span>
+        <span id="reason" class="mgright02 font037 blue">查看原因</span>
+    </div>
+
+</div>
+
+<button id="return_deposit" class="orangeButton_big">确认退租</button>
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/depositReturn.js"></script>
+
+</body>
+</html>

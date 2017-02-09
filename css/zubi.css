@@ -1,0 +1,34 @@
+
+.mselect{
+    display: inline-block;
+    width: 10rem;
+}
+
+.mpanel{
+    text-align: center;
+    font-size: 0.45rem;
+    width: 4.97rem;
+    height: 2.08rem;
+    padding: 0;
+    float: left;
+    border-top: 1px solid #EDEDED;
+    border-right: 1px solid #EDEDED;
+}
+
+.custompanel{
+    position: relative;
+    font-size: 0.42rem;
+    opacity: 0;
+    top: 1rem;
+}
+
+#nickname{
+    font-size:0.45rem;
+}
+
+#customInput{
+    width:2rem;
+}
+#submit{
+    width: 1.57rem;
+}

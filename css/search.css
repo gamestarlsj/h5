@@ -1,0 +1,64 @@
+.searchbox {
+    position: relative;
+    height: 1rem;
+    margin: 0.4rem;
+    display: inline-block;
+}
+
+.sinput {
+    float: left;
+    width: 8rem;
+    line-height: 21px;
+    padding: 4px 7px;
+    color: #b3b3b3;
+    border: 1px solid #999;
+    border-radius: 2px 0 0 2px;
+    background-color: #fbfbfb;
+}
+
+.found_icon{
+    width: 1.33rem;
+}
+
+
+
+.sbtn {
+    float: left;
+    width: 50px;
+    height: 31px;
+    padding: 0 12px;
+    margin-left: -1px;
+    border-radius: 0 2px 2px 0;
+    border: 1px solid orange;
+    background-color: orange;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+    color: #f3f7fc;
+    position: absolute;
+    _left: 270px;
+    _top: 0;
+}
+
+.searchbox{
+    margin-bottom: 0;
+}
+
+.searchkeybox{
+    position: relative;
+    height: 1rem;
+    margin: 0.4rem;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.searchkey {
+    display: inline-block;
+    padding: 0.2rem;
+    border: 1px solid orange;
+    color: orange;
+    margin: 0.15rem;
+    font-size: 0.35rem;
+}

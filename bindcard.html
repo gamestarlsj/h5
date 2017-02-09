@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>绑定银行卡</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/password.css">
+</head>
+<body onload="rootREM()">
+
+<style>
+    #submit{
+        width: 9.2rem;
+        height: 1.17rem;
+        margin-top: 0.3rem;
+        margin-left: 0.4rem;
+        font-size: 0.45rem;
+    }
+</style>
+
+<div class="header between">
+    <p id="return">
+        <img src="img/nav_icon_back.png" alt="">
+    </p>
+    <p>绑定银行卡</p>
+    <p></p>
+</div>
+
+<div>
+    <p class="panem font037 flex mgleft02" style="height: 0.93rem">*请填写您本人的银行卡信息</p>
+    <div class="panel flex between" style="height: 0.93rem">
+        <input type="text" placeholder="请输入您本人银行卡号" class="font042 mgleft02 mgtop015" style="border: 0;width: 7rem">
+        <img src="img/arrow.png" class="arrow mgright02" alt="">
+    </div>
+    <div class="panel flex between touchchange" style="height: 0.93rem">
+        <span type="text" class="grey font042 mgleft02 mgtop015" style="border: 0;width: 7rem">请选择卡类型</span>
+        <img src="img/arrow.png" class="arrow mgright02" alt="">
+    </div>
+
+    <div class="panel flex between" style="height: 0.93rem">
+        <input type="text" placeholder="请输入您本人银行卡号" class="font042 mgleft02 mgtop015" style="border: 0;width: 7rem">
+        <img src="img/arrow.png" class="arrow mgright02" alt="">
+    </div>
+
+    <div class="panel flex between" style="height: 0.93rem">
+        <input type="text" placeholder="请输入您本人银行卡号" class="font042 mgleft02 mgtop015" style="border: 0;width: 7rem">
+        <img src="img/arrow.png" class="arrow mgright02" alt="">
+    </div>
+
+    <p class="panel font037 flex mgleft02" style="height: 0.93rem">*个人信息仅用于银行验证</p>
+    <div class="panel flex between" style="height: 0.93rem">
+        <input type="text" placeholder="请输入银行卡预留手机号" class="font042 mgleft02 mgtop015" style="border: 0;width: 7rem">
+        <div>
+            <img src="img/nav_icon_jieshi.png" class="mgleft02" style="width:0.53rem" alt="">
+            <img src="img/arrow.png" class="arrow mgright02" alt="">
+        </div>
+    </div>
+
+    <div class="flex mgtop mgleft02" style="">
+        <label class="mgleft02 font037 grey">
+            <input class="mgleft02" type="checkbox">
+            <span>我已阅读并同意 <span class="blue">《梦想免费用户服务协议》</span></span>
+        </label>
+    </div>
+
+    <button id="submit" class="orangeButton_big">下一步</button>
+
+
+
+</div>
+
+
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/password.js"></script>
+
+</body>
+</html>

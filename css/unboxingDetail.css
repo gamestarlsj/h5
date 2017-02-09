@@ -1,0 +1,36 @@
+.title{
+    font-size: 0.45rem;
+    margin-left: 0.2rem;
+    margin-top: 0.1rem;
+}
+
+.public{
+    font-size: 0.37rem;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+}
+
+.username{
+    color: #2C7AD9;
+}
+
+.publictime{
+    margin-right: 0.1rem;
+}
+.winningDetail{
+    background: #f7f7f7;
+    padding:0.4rem;
+    padding-right: 0;
+}
+#content{
+    padding: 0;
+    font-size: 0.42rem;
+    margin-left: 0.2rem;
+    margin-top: 0.3rem;
+}
+
+#feedimg{
+    padding: 0;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+}

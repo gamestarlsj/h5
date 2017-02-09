@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>设置</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/setting.css">
+</head>
+
+<body onload="rootREM()">
+
+<div class="header between">
+    <p id="return">
+        <img src="img/nav_icon_back.png" alt="">
+    </p>
+    <p>设置</p>
+    <p></p>
+</div>
+
+<div class="panel flex between mgtop" style="height: 0.77rem">
+    <p class="font042 mg0 mgleft02 ">头像</p>
+    <div class="flex">
+        <img src="img/avatar.jpg" style="width: 0.66rem;border-radius: 0.5rem" alt="">
+        <img src="img/arrow.png" class="mgleft02 arrow" alt="">
+        <input style="opacity: 0.0;position: absolute;left: 7rem" type="file" id="avatarsubmit">
+    </div>
+
+
+</div>
+<div class="panel flex between" style="height: 0.77rem">
+    <p class="font042 mg0 mgleft02">昵称</p>
+    
+    <div class="flex">
+        <span class="grey changenick font042">梦想昵称</span>
+        <input style="display:none;font-size: 0.42rem;width: 2rem;color: #888888;border: 0;" id="changeinput" type="text" value="梦想昵称">
+        <img src="img/arrow.png" class="mgleft02 arrow" alt="">
+    </div>
+</div>
+<a href="selectBank.html">
+    <div class="panel flex between touchchange" style="height: 0.77rem">
+        <p class="font042 mg0 mgleft02">我的银行卡</p>
+            <div class="flex">
+            <span class="grey font042 flex">
+                <img src="img/jianhanglogo.png" style="width: 0.58rem" alt="">
+                <span class="mgleft02">建设银行(0000)</span>
+            </span>
+                <img src="img/arrow.png" class="mgleft02 arrow" alt="">
+            </div>
+    </div>
+</a>
+
+<a href="enterAccount.html">
+    <div class="panel flex between touchchange mgtop" style="height: 0.77rem">
+        <p class="font042 mg0 mgleft02">登录密码修改</p>
+
+        <div class="flex">
+            <img src="img/arrow.png" class="mgleft02 arrow" alt="">
+        </div>
+    </div>
+</a>
+
+
+<div class="panel flex between touchchange " style="height: 0.77rem">
+    <p class="font042 mg0 mgleft02">支付密码修改</p>
+
+    <div class="flex">
+        <img src="img/arrow.png" class="mgleft02 arrow" alt="">
+    </div>
+</div>
+
+<div class="panel flex between touchchange " style="height: 0.77rem">
+    <p class="font042 mg0 mgleft02">支付密码找回</p>
+
+    <div class="flex">
+        <img src="img/arrow.png" class="mgleft02 arrow" alt="">
+    </div>
+</div>
+
+<div class="panel flex between touchchange " style="height: 0.77rem">
+    <p class="font042 mg0 mgleft02">我的收货地址</p>
+
+    <div class="flex">
+        <img src="img/arrow.png" class="mgleft02 arrow" alt="">
+    </div>
+</div>
+
+<div class="panel mgtop touchchange" style="text-align: center;padding: 0.3rem">
+    <span >退出登录</span>
+</div>
+
+</body>
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/common.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $(".changenick").on("click",function () {
+            $("#changeinput").show();
+            $(".changenick").hide();
+        })
+
+        $("#changeinput").on("blur",function () {
+
+            var changename = $("#changeinput").val();
+            $(".changenick").text(changename);
+            $(".changenick").show();
+            $("#changeinput").hide();
+        })
+
+    });
+</script>
+
+</html>

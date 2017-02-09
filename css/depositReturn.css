@@ -1,0 +1,14 @@
+.returnInput{
+    height: 1rem;
+    font-size: 0.5rem;
+    width: 5rem;
+    border: 0;
+}
+
+#return_deposit{
+    width: 9.2rem;
+    height: 1.17rem;
+    margin-top: 0.3rem;
+    margin-left: 0.4rem;
+    font-size: 0.45rem;
+}

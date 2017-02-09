@@ -1,0 +1,17 @@
+img.qrcode {
+    width: 4.0rem;
+}
+
+.tipbox{
+    padding: 0.2rem;
+    border: 1px solid #FF922B;
+    border-radius: 0.2rem;
+}
+
+.line2{
+    border-bottom: 1px solid #FF922B;
+    padding: 0.1rem;
+    position: relative;
+    top: -0.2rem;
+    width: 1.09rem;
+}

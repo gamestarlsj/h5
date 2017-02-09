@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>中奖计算</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mycard.css">
+</head>
+<body onload="rootREM()">
+
+<div class="header between">
+    <p id="return">
+        <img src="img/nav_icon_back.png" alt="">
+    </p>
+    <p>中奖计算</p>
+    <p></p>
+</div>
+
+<div class="panel">
+    <p class="mgleft02 mgtop02">计算公式</p>
+    <p class="grey font037 mgleft02 mgtop01 mgbottom02">[(数值A+数值B)]/商品所需人次]取余数+10000001</p>
+</div>
+
+<div class="panel mgtop02">
+    <p class="mgleft02 mgtop02">数值A</p>
+    <p class="grey font037 mgleft02 mgtop01 mgbottom02">=截止该商品最后参与时间最后50条全站参与记录 <br>
+        =1224688966</p>
+</div>
+
+<div class="panel mgtop02">
+    <p class="mgleft02 mgtop02">数值B</p>
+    <p class="grey font037 mgleft02 mgtop01 mgbottom02">=开奖当天上海证券交易所开市指数 <br>
+        =14832(2017年1月17日）</p>
+</div>
+
+<div class="panel mgtop02" style="height: 2.66rem">
+    <p class="mgleft02 mgtop02">计算结果</p>
+    <p style="text-align: center" class="orange font052 mgleft02 mgtop01 mgbottom02">幸运号码：10000001</p>
+</div>
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/my-card.js"></script>
+
+</body>
+</html>

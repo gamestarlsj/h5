@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>我的订单</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+
+<body onload="rootREM()">
+
+<div class="header flex between">
+    <a href="user.html">
+        <span>&lt;返回</span>
+    </a>
+    <p style="margin-left: -0.8rem;">我的订单</p>
+    <p> </p>
+</div>
+
+<div class="flex around mgtop topnav">
+    <a href="order.html">
+        <div>全部</div>
+        <img style="margin-left: 0" class="uparrow " src="img/uparrow.png" alt="">
+    </a>
+    <a href="order-waitpay.html?type=0">
+        <div>待付款</div>
+    </a>
+    <a href="order-waitpin.html?type=1">
+        <div>待拼团</div>
+    </a>
+    <a href="order-waitdelivery.html?type=3">
+        <div>待收货</div>
+    </a>
+    <a href="order-waituse.html?type=4">
+        <div>待使用</div>
+    </a>
+</div>
+
+
+<div class="orderAll">
+    <!--<div class="card mgtop">-->
+        <!--<div class="flex between">-->
+            <!--<div class="flex">-->
+                <!--<img class="middleimg" src="img/item1.jpg" alt="">-->
+                <!--<div>-->
+                    <!--<a href="">-->
+                        <!--<p class="titlefont2" style="margin-top: 0">水果蛋糕店（石鼓区）</p>-->
+                    <!--</a>-->
+
+                    <!--<p class="describefont grey" style="">总价：￥12.9</p>-->
+                <!--</div>-->
+
+            <!--</div>-->
+
+            <!--<p class="grey describefont" style="text-align: right;margin-top: -0.5rem;">待支付</p>-->
+        <!--</div>-->
+
+        <!--<hr style="margin-top: 0.3rem;margin-bottom:0.1rem">-->
+        <!--<div class="flex" style="justify-content: flex-end">-->
+            <!--<p class="titlefont orangeButton" style="margin: 0.1rem;background: white;border-color: grey;color: grey">取消订单</p>-->
+            <!--<a href="gmdetail.html">-->
+                <!--<p class="titlefont orangeButton" style="margin: 0.1rem">立即支付</p>-->
+            <!--</a>-->
+
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="card mgtop">-->
+        <!--<div class="flex between">-->
+            <!--<div class="flex">-->
+                <!--<img class="middleimg" src="img/item1.jpg" alt="">-->
+                <!--<div>-->
+                    <!--<p class="titlefont2" style="margin-top: 0">水果蛋糕店（石鼓区）</p>-->
+                    <!--<p class="describefont grey" style="">总价：￥12.9</p>-->
+                <!--</div>-->
+
+            <!--</div>-->
+            <!--<p class="grey describefont" style="text-align: right;margin-top: -0.7rem;margin-left: 0;">拼团中，差<span style="font-weight: bold" class="orange">9</span>人</p>-->
+        <!--</div>-->
+
+        <!--<hr style="margin-top: 0.3rem;margin-bottom:0.1rem">-->
+        <!--<div class="flex" style="justify-content: flex-end;color: grey">-->
+            <!--<a href="ptdetail.html">-->
+                <!--<p class="titlefont orangeButton" style="margin: 0.1rem;width: 2.5rem;">邀请好友拼团</p>-->
+            <!--</a>-->
+
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="card mgtop">-->
+        <!--<div class="flex between">-->
+            <!--<div class="flex">-->
+                <!--<img class="middleimg" src="img/item1.jpg" alt="">-->
+                <!--<div>-->
+                    <!--<p class="titlefont2" style="margin-top: 0">水果蛋糕店（石鼓区）</p>-->
+                    <!--<p class="describefont grey" style="">总价：￥12.9</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<hr class="hrline">-->
+        <!--<div class="flex" style="justify-content: flex-end;color: grey">-->
+            <!--<p class="describefont greyButton" style="margin: 0.1rem;">申请退款</p>-->
+            <!--<a href="Logistical.html">-->
+                <!--<p class="describefont greyButton" style="margin: 0.1rem;">查看物流</p>-->
+            <!--</a>-->
+            <!--<p class="describefont orangeButton" style="margin: 0.1rem;">确认收货</p>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+    <!--<div class="card mgtop flex between">-->
+
+        <!--<div class="flex">-->
+            <!--<img class="middleimg" src="img/item1.jpg" alt="">-->
+            <!--<div>-->
+                <!--<p class="titlefont2" style="margin-bottom: 0">水果蛋糕店（石鼓区）</p>-->
+                <!--<p class="describefont grey" style="margin-top: 0">有效期至2016.12.12</p>-->
+                <!--<p class="describefont grey" style="margin-bottom: 0">总价：￥12.9</p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<p class="grey describefont" style="text-align: right">待使用</p>-->
+            <!--<a href="odetail-card-paid.html">-->
+                <!--<p class="titlefont orangeButton">查看券码</p>-->
+            <!--</a>-->
+
+        <!--</div>-->
+    <!--</div>-->
+</div>
+
+<footer class="footer">
+
+</footer>
+
+</body>
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/order.js"></script>
+
+<script>
+
+</script>
+
+
+</html>

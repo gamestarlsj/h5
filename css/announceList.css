@@ -1,0 +1,24 @@
+.annoucePanel{
+    padding:0;
+    width: 10rem;
+    margin-top: 0.1rem;
+}
+
+
+.annoucing,.waitannouce,.annouced{
+    position: absolute;
+    color: white;
+    background: #FF5577;
+    width: 1.49rem;
+    height: 0.53rem;
+    font-size: 0.32rem;
+    text-align: center;
+}
+
+.waitannouce{
+    background: #419BF9;
+}
+
+.annouced{
+    background: #B5B5B5;
+}

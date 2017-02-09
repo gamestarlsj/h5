@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>收货地址管理</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/setaddress.css">
+</head>
+
+<body onload="rootREM()">
+
+
+
+<div class="toshow">
+    <div class="toshow2">
+
+    </div>
+    <div class="setaddresspanel">
+        <div class="describefont">编辑地址</div>
+        <div class="flex">
+            <div style="width: 50%;border: 1px solid gainsboro">
+                <input class="adinput" id="panelName" type="text" placeholder="姓名">
+            </div>
+            <div style="width: 50%;border: 1px solid gainsboro">
+                <input class="adinput" id="panelMobile" type="text" placeholder="电话号码">
+            </div>
+        </div>
+        <div class="flex">
+            <div class="m-addr-region flex around">
+                <div class="m-addr-province">
+                    <select class="m-addr-select" data-duplex-changed="onProvinceEdited">
+                        <option value="0">选择省份</option>
+                    </select>
+                </div>
+                <div class="m-addr-city">
+                    <select class="m-addr-select" data-duplex-changed="onCityEdited">
+                        <option value="0">选择城市</option>
+                    </select>
+                </div>
+                <div class="m-addr-district">
+                    <select class="m-addr-select" data-duplex-changed="onDistrictEdited">
+                        <option value="0">选择地区</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div style="border: 1px solid gainsboro" >
+            <input id="address" placeholder="请填写详细街道地址" type="text">
+        </div>
+        <div>
+            <div class="saveaddress">保存</div>
+        </div>
+
+        <input type="hidden" class="touched_id">
+
+        <div class="m-addr-close">
+            <img src="img/close_02.png" class="ms-addr-close-icon"></img>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="header between">
+    <p id="return">
+        <img src="img/nav_icon_back.png" alt="">
+    </p>
+    <p>收货地址管理</p>
+    <p></p>
+</div>
+
+<div class="adbox">
+    <div id="'+ e.id+'" class="panel mgtop01">
+        <div class="adddetail flex between">
+            <div>
+                <p class="titlefont2 alladdress flex between">
+                    <span class="font037 mgleft02 mgright02">梦想达人</span>
+                    <span class="font037 mgleft02 mgright02">15659986640</span>
+                </p>
+                <p class="mgtop font037 mgleft02 mgright02">厦门市厦门市厦门市厦门市厦门市厦门市厦门市厦门市厦门市厦门市厦门市</p>
+                <input type="hidden" class="currid" value="'+ e.id +'">
+            </div>
+            <div>
+                <input type="hidden" class="provice_id" value="'+ e.province_id+'" />
+                <input type="hidden" class="city_id" value="'+ e.city_id+'" />
+                <input type="hidden" class="district_id" value="'+ e.district_id+'" />
+            </div>
+        </div>
+        <hr class="hrline">
+        <div class="flex between">
+            <div>
+                <p onclick="setdefault('+ e.id +')" class="isdefault_'+ e.is_default+' flex mgleft02">
+                    <img style="width: 0.37rem"  src="img/chose_up.png" alt="">
+                    <span class="orange font037">&nbsp;默认地址</span>
+                </p>
+            </div>
+            <div>
+                <span editId = "'+ e.id +'" class="describefont edit blue">编辑</span>
+                <span deleteId="'+ e.id +'" style="margin-left: 0.64rem" class="mgright02 describefont delete blue">删除</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="adbox">
+    <div id="'+ e.id+'" class="panel mgtop01">
+        <div class="adddetail flex between">
+            <div>
+                <p class="titlefont2 alladdress flex between">
+                    <span class="font037 mgleft02 mgright02">梦想达人</span>
+                    <span class="font037 mgleft02 mgright02">15659986640</span>
+                </p>
+                <p class="mgtop font037 mgleft02 mgright02">厦门市厦门市厦门市厦门市厦门市厦门市厦门市厦门市厦门市厦门市厦门市</p>
+                <input type="hidden" class="currid" value="'+ e.id +'">
+            </div>
+            <div>
+                <input type="hidden" class="provice_id" value="'+ e.province_id+'" />
+                <input type="hidden" class="city_id" value="'+ e.city_id+'" />
+                <input type="hidden" class="district_id" value="'+ e.district_id+'" />
+            </div>
+        </div>
+        <hr class="hrline">
+        <div class="flex between">
+            <div>
+                <p onclick="setdefault('+ e.id +')" class="isdefault_'+ e.is_default+' flex mgleft02">
+                    <img style="width: 0.37rem"  src="img/chose_up.png" alt="">
+                    <span class="font037 grey">&nbsp;设为默认</span>
+                </p>
+            </div>
+            <div>
+                <span editId = "'+ e.id +'" class="describefont edit blue">编辑</span>
+                <span deleteId="'+ e.id +'" style="margin-left: 0.64rem" class="mgright02 describefont delete blue">删除</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--<footer class="footer">-->
+    <!-- -没有了- -->
+<!--</footer>-->
+
+<div class="addaddress">
+    <p class="titlefont2">添加新地址</p>
+</div>
+
+
+
+</body>
+
+<script src="js/lib/zepto.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/setaddress.js"></script>
+
+<script>
+
+</script>
+
+
+</html>

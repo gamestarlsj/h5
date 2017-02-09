@@ -1,0 +1,146 @@
+/*#FF922B 主色调 */
+
+#swiper{
+    height: 21%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+}
+
+.nav{
+    width: 100%;
+    height: 4.6em;
+    background-color: white;
+}
+.nav_section{
+    /* width: 4.95rem; */
+    height:100%;
+    text-align: center;
+    display:inline-block;
+}
+
+.nav_section img{
+    width: 1.0rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.15rem;
+}
+
+.items {
+    margin-top: 0.3rem;
+    height: 8rem;
+    background: white;
+}
+
+img.itemspic {
+    height: 5.7rem;
+    width: 100%;
+}
+.tuangoupic{
+   width: 0.4rem;
+   margin: 0 0.2rem;
+}
+
+.thoughline {
+    height: 2px;
+    width: 1.6rem;
+    background: #FF922B;
+    display: block;
+    margin-left: 1.7rem;
+}
+
+.detailbox{
+    width: 5rem;
+    height: auto;
+    background-color: white;
+    padding-bottom: 0.2rem;
+    float: left;
+}
+.tip{
+    width: 1.14rem;
+    height: 0.66rem;
+    font-size: 0.35rem;
+    text-align: center;
+    color: white;
+    padding-top: 0.1rem;
+    background-color: #FF5577;
+    margin-left: 0.3rem;
+    position: absolute;
+}
+
+.goodname{
+    font-size: 0.4rem;
+    padding-left: 0.3rem;
+    color:#323232;
+}
+
+.goodimg{
+    width: 5rem;
+    height: 3.7rem;
+}
+
+.percent{
+    width: 2.61rem;
+    height: 5px;
+    background-color: #E7E7E7;
+    border-radius: 5px;
+}
+
+.goods{
+
+}
+
+.currpercent{
+    width:43%;
+    height: 5px;
+    background-color: #FF922B;
+}
+
+.active{
+    color:#FF922B;
+}
+
+.nomore{
+    display: none;
+}
+.tuangoumes{display: flex;align-items: center;justify-content: center;width: 2rem;}
+
+.scrollfont{
+    animation: scrollfont 10s linear 2s infinite ;
+    /* Safari 和 Chrome: */
+    -webkit-animation: scrollfont 10s linear 2s infinite ;
+    /* Opera: */
+    -o-animation: scrollfont 10s linear 2s infinite ;
+    position: relative;
+}
+
+
+@-webkit-keyframes scrollfont /* Safari 和 Chrome */
+{
+    0%   { left: 10rem }
+    100% { left: -10rem }
+}
